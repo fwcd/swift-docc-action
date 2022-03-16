@@ -20,7 +20,7 @@ Then include the action in your workflow (make sure that the Swift toolchain is 
     target: YourTarget
     output: ./docs
     hosting-path: yourproject
-    transform-for-static-hosting: true
+    transform-for-static-hosting: 'true'
 ```
 
 The generated documentation will be in the `./docs` folder. If you wish to host your docs on GitHub Pages, check out [this tutorial from the official docs](https://apple.github.io/swift-docc-plugin/documentation/swiftdoccplugin/publishing-to-github-pages/).
