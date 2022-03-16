@@ -2,9 +2,10 @@
   "name": "swift-docc-action",
   "version": "1.0.0",
   "description": "Generate DocC documentation for your Swift package",
-  "main": "dist/index.js",
+  "main": "out/index.js",
   "scripts": {
     "build": "tsc",
+    "watch": "tsc -w",
     "dist": "ncc build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,7 +20,7 @@
   },
   "homepage": "https://github.com/fwcd/swift-docc-action#readme",
   "devDependencies": {
-    "ncc": "^0.3.0",
+    "@vercel/ncc": "^0.33.3",
     "typescript": "^4.6.2"
   }
 }
