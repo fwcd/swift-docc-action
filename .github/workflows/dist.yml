@@ -1,4 +1,4 @@
-name: Build
+name: Dist
 
 on:
   push:
@@ -18,8 +18,8 @@ jobs:
         node-version: '16'
     - name: Install dependencies
       run: npm install
-    - name: Build
-      run: npm run build
+    - name: Build dist
+      run: npm run dist
     - name: Configure Git user
       run: |
         git config --global user.name "github-actions[bot]"
@@ -28,7 +28,7 @@ jobs:
       run: |
         if ! git diff --exit-code --quiet; then
           git add .
-          git commit -m "Update generated code ($(git rev-parse --short HEAD))"
+          git commit -m "Update generated dist ($(git rev-parse --short HEAD))"
           git push
         fi
 
