@@ -20,7 +20,12 @@
   },
   "homepage": "https://github.com/fwcd/swift-docc-action#readme",
   "devDependencies": {
+    "@types/node": "^17.0.21",
     "@vercel/ncc": "^0.33.3",
     "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/exec": "^1.1.0"
   }
 }
