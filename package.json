@@ -1,0 +1,19 @@
+{
+  "name": "swift-docc-action",
+  "version": "1.0.0",
+  "description": "Generate DocC documentation for your Swift package",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fwcd/swift-docc-action.git"
+  },
+  "author": "fwcd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fwcd/swift-docc-action/issues"
+  },
+  "homepage": "https://github.com/fwcd/swift-docc-action#readme"
+}
