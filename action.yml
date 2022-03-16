@@ -1,0 +1,24 @@
+name: Swift DocC Action
+description: Generate DocC documentation for your Swift package
+author: fwcd
+
+inputs:
+  target:
+    description: The target to document.
+    required: false
+  output:
+    description: The output folder.
+    required: false
+  hosting-base-path:
+    description: The path at which the docs will be hosted.
+    required: false
+  disable-indexing:
+    description: Whether to disable indexing.
+    required: false
+  transform-static-hosting:
+    description: Whether to generate documentation suitable for static hosting (e.g. on GitHub Pages).
+    required: false
+
+runs:
+  using: node16
+  main: dist/index.js

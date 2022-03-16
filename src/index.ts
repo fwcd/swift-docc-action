@@ -4,9 +4,9 @@ import * as exec from '@actions/exec';
 async function main() {
   const target = core.getInput('target');
   const output = core.getInput('output');
-  const hostingPath = core.getInput('hosting-path');
-  const disableIndexing = core.getBooleanInput('disable-indexing');
-  const transformForStaticHosting = core.getBooleanInput('transform-for-static-hosting');
+  const hostingBasePath = core.getInput('hosting-base-path');
+  const disableIndexing = core.getInput('disable-indexing');
+  const transformForStaticHosting = core.getInput('transform-for-static-hosting');
 
   await exec.exec('swift', [
     'package',
@@ -14,9 +14,9 @@ async function main() {
     'generate-documentation',
     ...(target.length ? ['--target', target] : []),
     ...(output.length ? ['--output-path', output] : []),
-    ...(hostingPath.length ? ['--hosting-path', hostingPath] : []),
-    ...(disableIndexing ? ['--disable-indexing'] : []),
-    ...(transformForStaticHosting ? ['--transform-for-static-hosting'] : []),
+    ...(hostingBasePath.length ? ['--hosting-base-path', hostingBasePath] : []),
+    ...(disableIndexing === 'true' ? ['--disable-indexing'] : []),
+    ...(transformForStaticHosting === 'true' ? ['--transform-for-static-hosting'] : []),
   ]);
 }
 
