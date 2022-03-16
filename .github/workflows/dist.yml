@@ -26,9 +26,7 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
     - name: Commit generated code
       run: |
-        if ! git diff --exit-code --quiet; then
-          git add .
-          git commit -m "Update generated dist ($(git rev-parse --short HEAD))"
-          git push
-        fi
+        git add .
+        git commit -m "Update generated dist ($(git rev-parse --short HEAD))"
+        git push
 
