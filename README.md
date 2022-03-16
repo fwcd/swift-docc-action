@@ -19,7 +19,8 @@ Then include the action in your workflow (make sure that a Swift 5.6+ toolchain 
   with:
     target: YourTarget
     output: ./docs
-    hosting-path: yourproject
+    hosting-base-path: yourproject
+    disable-indexing: 'true'
     transform-for-static-hosting: 'true'
 ```
 
