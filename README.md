@@ -1,5 +1,7 @@
 # Swift DocC Action
 
+[![Dist](https://github.com/fwcd/swift-docc-action/actions/workflows/dist.yml/badge.svg)](https://github.com/fwcd/swift-docc-action/actions/workflows/dist.yml)
+
 Generates documentation for a Swift 5.6+ project using the [`swift-docc-plugin`](https://github.com/apple/swift-docc-plugin).
 
 ## Usage
