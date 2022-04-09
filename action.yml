@@ -15,7 +15,7 @@ inputs:
   disable-indexing:
     description: Whether to disable indexing.
     required: false
-  transform-static-hosting:
+  transform-for-static-hosting:
     description: Whether to generate documentation suitable for static hosting (e.g. on GitHub Pages).
     required: false
 
