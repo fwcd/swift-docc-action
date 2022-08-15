@@ -24,4 +24,4 @@ Then include the action in your workflow (make sure that a Swift 5.6+ toolchain 
     transform-for-static-hosting: 'true'
 ```
 
-The generated documentation will be in the `./docs` folder. If you wish to host your docs on GitHub Pages, check out [this tutorial from the official docs](https://apple.github.io/swift-docc-plugin/documentation/swiftdoccplugin/publishing-to-github-pages/).
+The generated documentation will be in the `./docs` folder. If you wish to host your docs on GitHub Pages, check out [this tutorial from the official docs](https://apple.github.io/swift-docc-plugin/documentation/swiftdoccplugin/publishing-to-github-pages/). An example of a workflow that deploys directly to GitHub Pages [can be found here](https://github.com/fwcd/lighthouse-swift/blob/e9f345f1d936c917e520449e379c9c0f00cccbb2/.github/workflows/docs.yml).
